@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>My Accessible Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <header role="header">
+    <img src="your-image.jpg" alt="Your Name" width="200" role="img">
+    <h1 role="heading">Your Name</h1>
+    <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn Profile</a>
+  </header>
+  
+  <nav role="navigation">
+    <ul>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+  
+  <section id="skills" role="region">
+    <h2 role="heading">Skills</h2>
+    <ul role="list">
+      <li role="listitem">Skill 1</li>
+      <li role="listitem">Skill 2</li>
+      <li role="listitem">Skill 3</li>
+      <!-- Add more skills as needed -->
+    </ul>
+  </section>
+  
+  <section id="projects" role="region">
+    <h2 role="heading">Projects</h2>
+    <ul role="list">
+      <li role="listitem">Project 1</li>
+      <li role="listitem">Project 2</li>
+      <li role="listitem">Project 3</li>
+      <!-- Add more projects as needed -->
+    </ul>
+  </section>
 </body>
-
 </html>
